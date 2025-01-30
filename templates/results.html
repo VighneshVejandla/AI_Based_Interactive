@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+</head>
+<body>
+    <h1>Processed Financial Statement</h1>
+    <p>Your financial statement has been processed successfully.</p>
+    <a href="/download" download>
+        <button>Download Excel File</button>
+    </a>
+
+    <h2>Ask a Question</h2>
+    <form action="/ask" method="post">
+        <input type="text" name="question" placeholder="Enter your question" required>
+        <button type="submit">Ask</button>
+    </form>
+
+    {% if answer %}
+    <h3>Answer:</h3>
+    <p>{{ answer }}</p>
+    {% endif %}
+</body>
+</html>

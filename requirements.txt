@@ -1,0 +1,9 @@
+streamlit==1.41.1         # Streamlit for building the UI
+pdfplumber==0.11.5        # For extracting tables from PDF files
+pandas==2.2.3             # For handling tabular data and Excel files
+openpyxl==3.1.5           # For manipulating Excel files
+pyarrow>=7.0              # Dependency for Streamlit
+altair<6,>=4.0            # Dependency for Streamlit visualization
+rich==13.9.4              # For rendering rich text in Streamlit
+protobuf<6,>=3.20         # Dependency for Streamlit
+watchdog<7,>=2.1.5        # For Streamlit file watching
